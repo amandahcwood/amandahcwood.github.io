@@ -1,0 +1,58 @@
+<div class="site-wrapper"
+    style="display: table;
+          width: 100%;
+          height: 450px;
+          padding: 6rem 0;
+          text-align: center;
+          color: #fff;
+          box-shadow: inset 0 0 0 1000px rgba(141,84,63,.3);
+          background: url({{ headerphoto }}) no-repeat center top scroll;
+          background-color: #000;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;">
+
+      <div class="inner-wrapper">
+          <div class="container">
+            <h2 class="page-title">{{ title }}</h2>
+          </div>
+      </div>
+
+</div>
+
+<section class="menu">
+  <div class="container">
+    <div class="row">
+      <div class="aboutthefood">
+        <p>{{ content }}</p>
+      </div>
+    </div>
+
+    <div class="menu-content">
+      <div class="row">
+        {{ menu_builder }}
+
+          {{ if type == "menu_section" }}
+        <div class="col-md-12">
+            <h3>{{ section_name }}</h3>
+        </div>
+      </div>
+      <div class="row">
+        {{ elseif type == "menu_item" }}
+        <div class="col-md-6">
+          <div class="menu_item">
+            <h4>{{ name }}</h4>
+            <p>{{ description }}</p>
+            <span>{{ price }}</span>
+          </div>
+        </div>
+
+        {{ endif }}
+
+        {{ /menu_builder }}
+      </div>
+    </div>
+
+  </div>
+</section>

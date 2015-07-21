@@ -1,0 +1,46 @@
+title: Menu Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  headerphoto:
+    type: file
+    destination: assets/img/background-images/
+    allowed: ['jpg', 'png']
+
+  content:
+    display: About the menu
+    required: false
+    default:
+    type: markitup
+
+  menu_builder:
+    type: replicator
+    instructions: |
+      Add menu sections and items here.
+
+    sets:
+
+      menu_section:
+        display: Menu Section
+        instructions: ie. Appetizers or Mains
+        fields:
+          section_name:
+            display: Add a new menu section.
+            type: text
+
+      menu_item:
+        display: Menu Item
+        instructions: Add a new menu item
+        fields:
+          name:
+            type: text
+            instructions: Name of menu item.
+          description:
+            type: text
+            instructions: Description of menu item.
+          price:
+            type: text
+            instructions: Price of menu item.

@@ -1,0 +1,52 @@
+title: Bottle Shop Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  headerphoto:
+    type: file
+    destination: assets/img/background-images/
+    allowed: ['jpg', 'png']
+
+  content:
+    display: About the Bottle Shop
+    required: false
+    default:
+    type: markitup
+
+  hours_builder:
+    type: replicator
+    instructions: |
+      Add bottle shop hours here.
+
+    sets:
+
+      new_hours:
+        display: Hours
+        instructions: ie. Sunday to Thursday | 12pm to 7pm.
+        fields:
+          dates:
+            display: Add the date range here.
+            type: text
+          hours:
+            display: Add the hours range here.
+            type: text
+
+  bottleshop_builder:
+    type: replicator
+    instructions: |
+      Add new available beers.
+
+    sets:
+
+      new_beer:
+        display: Add new beer.
+        instructions: Upload the label for the beer.
+        fields:
+          beerlabel:
+            type: file
+            allowed: [png, jpg, gif]
+            destination: assets/img/beers
+            instruction: Add beer label.

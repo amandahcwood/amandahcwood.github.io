@@ -1,0 +1,1 @@
+a:1:{s:5:"admin";a:7:{s:10:"first_name";s:6:"Amanda";s:9:"last_name";s:4:"Wood";s:5:"roles";a:1:{i:0;s:5:"admin";}s:8:"password";s:0:"";s:4:"_uid";s:27:"38hmYX559a9ac970a9aHLMN6RSq";s:13:"password_hash";s:60:"$2a$08$0Se2KvEMB5AjosrbiBA5D.0ZPQ0ZKxQE/uIUclS2R9BTVw2ViZJmi";s:5:"_path";s:89:"/Users/amandahwood/Desktop/other-projects/elorabrewing/elorasite/_config/users/admin.yaml";}}

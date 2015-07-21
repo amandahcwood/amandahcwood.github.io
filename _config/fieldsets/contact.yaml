@@ -1,0 +1,11 @@
+title: Contact Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  headerphoto:
+    type: file
+    destination: assets/img/background-images/
+    allowed: ['jpg', 'png']

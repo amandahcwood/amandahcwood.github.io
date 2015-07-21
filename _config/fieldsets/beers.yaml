@@ -1,0 +1,59 @@
+title: Beers Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  headerphoto:
+    type: file
+    destination: assets/img/background-images/
+    allowed: ['jpg', 'png']
+
+  beer_menu_builder:
+    type: replicator
+    instructions: |
+      Add new beers here.
+
+    sets:
+
+      new_beer:
+        display: Beer
+        instructions: Add a new beer to menu
+        fields:
+          name:
+            type: text
+            instructions: Name of beer.
+          description:
+            type: text
+            instructions: Description of new beer (40 words or less).
+          abv:
+            type: text
+            instructions: ABV percentage.
+          ibu:
+            type: text
+            instructions: How many IBUs?
+          photo:
+            type: file
+            allowed: [png, jpg, gif]
+            destination: assets/img/beers
+            instruction: Add beer label.
+
+  location_replicator:
+    type: replicator
+    instructions: |
+      Add cities and available locations here.
+
+    sets:
+
+      location_set:
+        display: Location
+        instructions: Add a new city and locations here.
+        fields:
+          city:
+            type: text
+            height: 40
+            instructions: What's the city?
+          locations:
+            type: textarea
+            instructions: List the locations

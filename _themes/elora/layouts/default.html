@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site_name }}</title>
+
+  <!-- Bootstrap -->
+  {{ theme:css src="bootstrap.min.css" tag="true" }}
+
+  <!-- Custom Fonts -->
+  {{ theme:css src="font-awesome/css/font-awesome.min.css" tag="true"}}
+
+  <script src="//use.typekit.net/peo1bnt.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="{{ theme:css }}">
+</head>
+
+<body id="page-top" class="index">
+
+    {{ theme:partial src="nav" }}
+
+    {{ layout_content }}
+
+    {{ theme:partial src="footer" }}
+
+    
+
+    <!-- jQuery -->
+    {{ theme:js src="jquery.js" tag="true" }}
+
+    <!-- Bootstrap Core JavaScript -->
+    {{ theme:js src="bootstrap.min.js" tag="true" }}
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <script src="{{ theme:js }}"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    {{ theme:js src="classie.js" tag="true" }}
+
+
+</body>
+
+</html>
+
+
+{{#
+====================================
+  NOTES
+====================================
+
+This is the default layouts template used by all pages. If no other layout file is called then Statamic will use this file.
+
+For more information on how Statamic works and the three distinct pieces: content file, template and layout see http://statamic.com/learn/core-concepts/how-pages-are-built.
+
+#}}

@@ -1,0 +1,34 @@
+title: Standard Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  headerphoto:
+    type: file
+    destination: assets/img/
+    allowed: ['jpg', 'png']
+
+  content:
+    display: Page Content
+    required: false
+    default:
+    image_dir: assets/img/photos
+    type: redactor
+
+  photo_replicator:
+    type: replicator
+    instructions: |
+      Add new photos here.
+
+    sets:
+
+      new_photo:
+        display: Photo
+        instructions: Add a new photo to page.
+        fields:
+          photo:
+            type: file
+            allowed: [png, jpg, gif]
+            destination: assets/img/photos

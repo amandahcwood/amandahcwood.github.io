@@ -1,0 +1,803 @@
+/* This is where all our styles go change the name of this file to the name of your theme. */
+
+body {
+    overflow-x: hidden;
+    font-family: "futura-pt","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #F8F7F3;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #CD582F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "futura-pt","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-family: "futura-pt","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-primary .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #CD582F;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #CD582F;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #CD582F;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #CD582F;
+}
+
+.navbar-static-top {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 10px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    .navbar-right {
+    	padding-top: 20px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section#contact {
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #000000;
+    position: relative;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer .contact-info p {
+    font-size: 18px;
+}
+
+/*--- Header & Video Containers ---*/
+
+.header-container {
+    width: 100%;
+    height: 750px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+    display: table;
+    box-shadow: inset 0 0 0 1000px rgba(86,31,11,.2);
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    z-index: -9;
+    opacity: 0.78;
+    width: 100%;
+}
+
+.inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+h1.headline {
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 40px;
+    max-width: 550px;
+    position: relative;
+}
+
+    h1.headline span {
+        font-family: "Great Vibes",cursive;
+        text-transform: capitalize;
+        font-size: 80px;
+        position: absolute;
+        top: 30px;
+        right: 59px;
+    }
+
+h2.page-title {
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/*--- Home Page Styles ---*/
+
+section.sub-header-container {
+    height: 750px;
+    background: url(/assets/img/background-images/dark-bg.png) repeat center center;
+    position: relative;
+    background-size: 40px;
+    padding: 200px;
+}
+
+section.about h2 {
+    color: #CD582F;
+    letter-spacing: 2px;
+    font-size: 40px;
+    max-width: 300px;
+}
+
+section.about p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+ul.social-buttons {
+    font-size: 20px;
+    position: relative;
+}
+
+    ul.social-buttons li a {
+        color: #ffffff;
+    }
+
+    ul.social-buttons li a:hover {
+        color: #ffffff;
+    }
+
+.news-container {
+    border: 2px solid #ffffff;
+    margin: 20px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+    .news-container span {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .news-container h4.title {
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin: 40px auto;
+    }
+
+    .news-container .btn {
+        border-radius: 0px;
+        background-color: #ffffff;
+        color: #000000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100px;
+    }
+
+        .news-container .btn:hover {
+            background-color: #CD582F;
+            color: #ffffff;
+        }
+
+section.quicklinks {
+    background-color: #CD582F;
+    text-align: center;
+    position: relative;
+}
+
+    section.quicklinks a {
+        color: #ffffff;
+    }
+
+    section.quicklinks a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+h5.quicklink {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+img.icons {
+    height: 112px;
+    margin: 0 auto;
+}
+
+section.aboutthebeer {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background: url(/assets/img/background-images/aboutbeer-bg.jpg) no-repeat center top scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    padding: 200px 0;
+}
+
+    section.stories h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    section.stories p {
+        font-size: 18px;
+    }
+
+    section.stories .btn {
+        background-color: #CD582F;
+        border-radius: 0px;
+        margin: 10px auto;
+        text-transform: uppercase;
+        width: 150px;
+        letter-spacing: 1px;
+    }
+
+        section.stories .btn:hover {
+            background-color: #ffffff;
+            color: #CD582F;
+        }
+
+section.brewedinelora {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background: url(/assets/img/background-images/brewedinelora-bg.jpg) no-repeat center bottom scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    padding: 200px 0;
+    text-align: right;
+}
+
+.addressbar {
+    background-color: #ffffff;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+    .addressbar p {
+        margin: 0 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+#map {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+}
+
+@media(min-width:767px) {
+
+    #map {
+        height: 400px;
+    }
+}
+
+/*--- Beers Page Styles ---*/
+
+section.beers .single_beer .info {
+    color: #4A4A4A;
+}
+
+    h3.name {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    p.description {
+        font-size: 17px;
+    }
+
+    .info span {
+        font-size: 18px;
+    }
+
+    span.bold {
+        font-weight: 700;
+    }
+
+section.locate h2 {
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.locations-container {
+    background-color: #ffffff;
+    padding: 30px 60px;
+}
+
+    .locations-container h4 {
+        text-transform: uppercase;
+        color: #CD582F;
+        font-size: 22px;
+    }
+
+    .locations-container p.city {
+        color: #4A4A4A;
+    }
+
+.cta-bottleshop {
+    border: 2px solid #CD582F;
+    padding: 30px 40px;
+    text-align: center;
+    color: #000;
+}
+
+    .cta-bottleshop p {
+        font-size: 18px;
+        margin: 20px auto;
+    }
+
+    .cta-bottleshop .btn {
+        background-color: #CD582F;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+        .cta-bottleshop .btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+/*--- Bottle Shop Page Styles ---*/
+
+section.bottleshop .callout {
+    background: rgba(235,234,231,0.6);
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+}
+
+    section.bottleshop h4 {
+        text-transform: uppercase;
+        color: #4A4A4A;
+        font-size: 22px;
+    }
+
+    section.bottleshop p.hours {
+        color: #4A4A4A;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+    section.bottleshop .info p {
+        color: #4A4A4A;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+
+
+
+/*--- Menu Page Styles ---*/
+
+.aboutthefood {
+    background: rgba(235,234,231,0.6);
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+    .aboutthefood p {
+        color: #636363;
+        font-size: 18px;
+    }
+
+.menu-content {
+    margin: 40px auto;
+}
+
+    .menu-content h3 {
+        color: #CD582F;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+
+    .menu-content h4 {
+        color: #4A4A4A;
+        margin: 25px auto 15px auto;
+    }
+
+    .menu-content p {
+        color: #4A4A4A;
+        font-size: 18px;
+    }
+
+    .menu-content span {
+        color: #4A4A4A;
+        font-size: 18px;
+    }
+
+    .menu_item {
+        margin-bottom: 20px;
+    }
+
+/*--- Process Page Styles ---*/
+
+section.meetthebrewer {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    background: url(/assets/img/background-images/meetthebrewer-bg.jpg) no-repeat center top scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+    section.meetthebrewer h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    section.meetthebrewer p {
+        font-size: 18px;
+    }
+
+/*--- Contact Page Styles ---*/
+
+section.contact .inner-padding {
+    padding: 0 30px;
+}
+
+section.contact h3 {
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+section.contact p {
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+section.contact .btn {
+        background-color: #CD582F;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+        section.contact .btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+section.contact h4 {
+    color: #CD582F;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+section.contact a.email {
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+/*--- Standard Page Styles ---*/
+section.page {
+    color: #4A4A4A;
+}
+
+    section.page p {
+        font-size: 18px;
+    }
+
+    section.page ul li {
+        font-size: 18px;
+    }

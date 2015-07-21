@@ -1,0 +1,49 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Brewpub hours</h5>
+                {{get_content from="/"}}
+                {{ brewpub_hours }}
+                    {{ if type == "new_hours" }}
+                <p>{{ dates }} | {{ hours }}</p>
+                    {{ endif }}
+                {{ /brewpub_hours }}
+            </div>
+            <div class="col-md-4">
+                <h5>Bottle shop hours</h5>
+                {{ bottleshop_hours }}
+                    {{ if type == "new_hours" }}
+                <p>{{ dates }} | {{ hours }}</p>
+                    {{ endif }}
+                {{ /bottleshop_hours }}
+                {{/get_content}}
+            </div>
+            <div class="contact-info col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="https://twitter.com/EloraBrewingCo"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/EloraBrewingCompany"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com/elorabrewingcompany/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://untappd.com/EloraBrewingCompany"><img src="/assets/img/icons/untappd-icon.png" height="20px" style="position: absolute; top: 5px;" /></a>
+                    </li>
+                </ul>
+                <p class="telephone">T: 519-805-2829</p>
+                <p class="email"><a href="mailto:cheers@elorabrewingcompany.ca?subject=Message from website">E: cheers@elorabrewingcompany.ca</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{# 
+====================================
+  NOTES
+====================================
+
+This is the main footer partial.
+
+For more information on partials see http://statamic.com/learn/documentation/tags/theme.
+  
+#}}
